@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #e9ebee;
+  color: #1d2129;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Navbar {
+  color: #ffffff;
+  padding: 10px;
+  background: #20232a;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+ul > li {
+  list-style: none;
+  display: list-item;
+  text-align: center;
+  margin-right: 10px;
+}
+.todoinputheader {
+  background-color: #f5f6f7;
+  border-bottom: 1px solid #dddfe2;
+  border-radius: 2px 2px 0 0;
+  margin: 0;
+  padding: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-input {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #fff;
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-input:focus {
+  outline: none;
+}
+.todo {
+  margin: 15px;
+  padding: 15px;
+  border: #1d2129 solid 0.5px;
+}
+.Todo-delete {
+  background-color: lightcoral;
+}
+.Todo-edit {
+  background-color: khaki;
+  margin-right: 15px;
+}
+button {
+  border: lightslategray solid 0.5px;
+
+  padding: 5px;
+  display: list-item;
+  float: right;
+  cursor: pointer;
 }
